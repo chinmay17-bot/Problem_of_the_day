@@ -22,11 +22,12 @@ void solve(){
     n;
     cin >> n;
     int zeros= 0;
-    int div= 5;
-    while(n/ div){
-        zeros+= (n/ div);
-        div*= div;
+
+    for (int i = 5; n/i>= 1; i*=5)
+    {
+        zeros+= (n/ i);
     }
+    
 
     cout << zeros<< endl;
 
@@ -41,7 +42,7 @@ int main(){
 
     // initNCR(200010);
 
-    ll t;cin>>t;while(t--)
+    // ll t;cin>>t;while(t--)
         solve();
     
 
