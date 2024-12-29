@@ -6,25 +6,23 @@ void solve(){
 
     // int n,a,b,c;
     
-    n;
     cin >> n;
-    ans= 0;
+    vector<int > arr(n);
+    cin >> arr;
+
     
-    ll i=1;
-    while(i<= n){
+    int num= 0;
+    for(int i= 0; i< n; i++){
         
-        if(n% i== 0){
-            temp++;
-        }
-        else{
-            ans= max(ans, temp);
-            break;
-        }
-        i++;
+        
+        num= __gcd(abs(arr[i]- (i+1)), num);
+
     }
-    
-    ans= max(ans, temp);
-    cout << ans;
+
+
+
+
+    cout << num;
     nl;
 
 }
