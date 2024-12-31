@@ -6,4 +6,4 @@ int minPartitions(string n) {
         }
 
         return m;
-    }
+    }l
